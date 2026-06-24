@@ -511,7 +511,7 @@ img{display:block;max-width:100%}
           <h2 class="hero-name name" data-seg="seg24">ENEXIO</h2>
         </div>
         <div class="hero-tag" data-seg="seg24">Dry &amp; Wet Cooling</div>
-        <p class="wh-purpose" data-seg="seg25">Then it <b>breathes</b> — both <b>dry and wet cooling</b>: air-cooled condensers, cooling towers and hybrid deluge systems. Dry cooling <b>slashes the water</b> a plant draws — the edge for a water-scarce Tamil Nadu.</p>
+        <p class="wh-purpose" data-seg="seg25">Then it <b>breathes</b> — both <b>dry and wet cooling</b>: air-cooled condensers, cooling towers and hybrid deluge systems. Dry cooling <b>slashes the water</b> a plant draws — even in times of water scarcity.</p>
         <div class="hero-stats" data-seg="seg25">
           <div class="st"><div class="n" data-count="1110" data-suffix="+"></div><div class="c">ACCs worldwide</div></div>
           <div class="st"><div class="n" data-count="300" data-suffix="+"></div><div class="c">In India</div></div>
@@ -897,7 +897,7 @@ function playClip(seg){
   vo.onerror=()=>{ clearTimeout(safety); safety=setTimeout(advance,2600); };
   vo.onloadedmetadata=()=>{ clearTimeout(safety);
     safety=setTimeout(advance,(isFinite(vo.duration)?vo.duration*1000:2600)+2500); };
-  vo.src=`assets/audio/vo-alphafour/${seg}.mp3?v=2`;
+  vo.src=`assets/audio/vo-alphafour/${seg}.mp3?v=3`;
   vo.muted=muted; vo.currentTime=0;
   vo.play().catch(()=>{ clearTimeout(safety); safety=setTimeout(advance,2800); });
   safety=setTimeout(advance,9000); // hard backstop
